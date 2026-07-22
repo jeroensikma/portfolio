@@ -1,0 +1,55 @@
+.mobileOnly {
+    display: flex;
+    flex-direction: column;
+}
+
+.desktopGrid {
+    display: none;
+}
+
+.desktopFlex {
+    display: none;
+}
+
+.stackOnMobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.awardsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.alignToRight {
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    .mobileOnly {
+        display: none;
+    }
+
+    .desktopGrid {
+        display: grid;
+    }
+
+    .desktopFlex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stackOnMobile {
+        flex-direction: row;
+    }
+
+    .awardsGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .alignToRight {
+        width: 50%;
+        margin-left: 50%;
+    }
+}
