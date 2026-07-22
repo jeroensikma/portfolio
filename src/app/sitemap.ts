@@ -17,7 +17,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     return [
         { url: "https://jeroensikma.com", priority: 1 },
-        { url: "https://jeroensikma.com/index" },
+        { url: "https://jeroensikma.com/archive" },
         { url: "https://jeroensikma.com/about" },
         ...projectEntries,
     ];

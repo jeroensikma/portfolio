@@ -40,7 +40,7 @@ export default function Header({ type = "home", onLogout }: HeaderProps) {
                     {type === "home" && (
                         <>
                             <NavItem href="/" label="Selected" active={pathname === "/"} />
-                            <NavItem href="/index" label="Index" active={pathname === "/index"} />
+                            <NavItem href="/archive" label="Archive" active={pathname === "/archive"} />
                             <NavItem href="/about" label="About" active={pathname === "/about"} />
                         </>
                     )}
@@ -83,7 +83,7 @@ export default function Header({ type = "home", onLogout }: HeaderProps) {
                     {type === "home" && (
                         <>
                             <NavItem href="/" label="Selected" active={pathname === "/"} />
-                            <NavItem href="/index" label="Index" active={pathname === "/index"} />
+                            <NavItem href="/archive" label="Archive" active={pathname === "/archive"} />
                             <NavItem href="/about" label="About" active={pathname === "/about"} />
                         </>
                     )}
