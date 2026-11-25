@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
                 pathname: "/storage/v1/object/public/**",
             },
         ],
+        // Each width a browser or crawler can request is a separate billed
+        // transformation on Vercel, so offer fewer than Next's 15 defaults.
+        deviceSizes: [640, 1080, 1920],
+        imageSizes: [256, 384],
     },
     async headers() {
         return [
